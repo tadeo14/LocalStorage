@@ -1,8 +1,13 @@
-//traemos la etiqueta parrafo desde el html. 
-const nombreUsuario = document.querySelector('#nombre');
-//traemos lo que hay guardado y lo convertimos en objeto js
-const nombre = JSON.parse(localStorage.getItem('usuario'));
+//traemos la etiqueta
+const handleNuevoUsuario = document.querySelector('#handleNuevoUsuario');
 
-//Mostramos lo sucedido en js en la pagina
+//evento  de envio del formulario
+handleNuevoUsuario.addEventListener('click', addUser);
 
-nombreUsuario.textContent = nombre; 
+//guardar el nombre en un arreglo
+
+function addUser() {
+    //leer lo que el usuario ingreso
+    const nombre = document.querySelector('#usuarioNuevo').value;
+    console.log(nombre);
+}   
