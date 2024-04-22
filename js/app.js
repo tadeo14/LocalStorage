@@ -1,5 +1,8 @@
-const user = 'pepito';
+//traemos la etiqueta parrafo desde el html. 
+const nombreUsuario = document.querySelector('#nombre');
+//creamos la variable
+const nombre = 'pepito';
 
+//Mostramos lo sucedido en js en la pagina
 
-//Utilizamos el metodo para guardarlo en localstorage y lo convertimos en formato json
-localStorage.setItem('usuario',JSON.stringify (user));
+nombreUsuario.textContent = nombre; 
